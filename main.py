@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import openpyxl
 from sqlalchemy import create_engine
@@ -84,8 +85,11 @@ df.to_excel(
 # 8. CONNECT TO MYSQL
 # ==========================================
 
+mysql_user = os.getenv("MYSQL_USER")
+mysql_password = os.getenv("MYSQL_PASSWORD")
+
 engine = create_engine(
-    "mysql+pymysql://root:Dhruvwakkar16@localhost:3306/customer_shopping"
+    f"mysql+pymysql://{mysql_user}:{mysql_password}@localhost:3306/customer_shopping"
 )
 
 
