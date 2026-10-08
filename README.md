@@ -126,7 +126,8 @@ The Power BI dashboard provides an interactive view of:
 - Revenue trends
 - Customer segments
 
-> **Power BI dashboard screenshot will be added here.**
+![Power BI Dashboard](power_bi_dashboard_report_1.jpeg)
+![Power BI Dashboard](power_bi_dashboard_report_2.jpeg)
 
 ---
 
